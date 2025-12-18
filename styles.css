@@ -1,0 +1,104 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
+body {
+   background-color: #181818;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+img {
+    height: 40px;
+}
+
+#video-list {
+    margin-top: 100px;;
+}
+
+.iframe {
+    margin: 5px;
+}
+
+.navbar-brand {
+    display: flex;
+    
+    margin-left: 20px;
+}
+
+.navbar-brand p {
+    position: relative;
+    top: 5px;
+    margin-left: 5px;
+    color: white;
+}
+
+#my-input {
+    width: 35vw;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    color: inherit;
+    -webkit-font-smoothing: antialiased;
+    -webkit-appearance: none;
+}
+
+#badgeParent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+}
+
+.badge {
+    margin-left: 10px ;
+    cursor: pointer;
+}
+
+.badge:hover {
+    background-color: aliceblue !important;
+    color: #181818 !important;
+}
+
+.badge.active {
+    background-color: aliceblue !important;
+    color: #181818 !important;
+}
+
+
+#my-btn {
+    margin-left: 5px;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #181818;
+    color: lightgreen;
+    border: 1px solid lightgreen;
+}
+
+#my-btn:hover {
+    background-color: white;
+    color:#181818;
+    
+}
+
+.navbar { 
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+@media only screen and (max-width: 918px) {
+    #my-input {
+        width: 50vw;
+    }
+
+    .iframe {
+    width: 100%;
+    margin: 0 auto;
+}
+}
