@@ -20,7 +20,7 @@ img {
 }
 
 #video-list {
-    margin-top: 100px;;
+    margin-top: 160px;;
 }
 
 .iframe {
@@ -84,7 +84,7 @@ img {
 #my-btn:hover {
     background-color: white;
     color:#181818;
-    
+
 }
 
 .navbar { 
@@ -100,5 +100,9 @@ img {
     .iframe {
     width: 100%;
     margin: 0 auto;
-}
+    }
+
+    #video-list {
+    margin-top: 200px;;
+    }
 }

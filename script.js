@@ -4,7 +4,7 @@ const searchBtn = document.querySelector('.btn');
 const body = document.querySelector('.row');
 const badges = document.querySelectorAll('.badge');
 
-
+let apiKey = ``
 
 let lastClicked;
 
@@ -17,10 +17,10 @@ for (let i = 0; i < badges.length; i++) {
         };
         lastClicked = badges[i]
         badges[i].classList.add('active');
-        const apiKey = ``;
         try {
             let apiUrl = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&part=snippet&q=${badgeInner}&type=video&maxResults=20&videoDuration=medium`);
-            response = await getInfo(apiUrl)
+            response = await getInfo(apiUrl);
+            console.log(response);
             displayVideo(response)
         } catch(e) {
         console.log(e);
@@ -35,11 +35,10 @@ const searchVideo = async() => {
     if (lastClicked) {
             lastClicked.classList.remove('active');
         };
-    let search = searchBar.value
-    const apiKey = ``;
+    let search = searchBar.value;
     try {
         let apiUrl = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&part=snippet&q=${search}&type=video&maxResults=20&videoDuration=medium`);
-        response = await getInfo(apiUrl)
+        response = await getInfo(apiUrl);
         displayVideo(response)
     } catch(e) {
         console.log(e);
